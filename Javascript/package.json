@@ -1,0 +1,26 @@
+{
+  "name": "jsalgorithms",
+  "version": "1.0.0",
+  "description": "Common algorithms expressed in javaScript.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentmoreland/Algorithms.git"
+  },
+  "author": "Kent Moreland <kentmoreland@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kentmoreland/Algorithms/issues"
+  },
+  "homepage": "https://github.com/kentmoreland/Algorithms#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
