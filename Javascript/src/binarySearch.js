@@ -3,7 +3,7 @@ module.exports = {
     let found = false
     let findItem = (list) => {
       let midpoint = Math.floor(list.length / 2)
-      let current = list[midpoint - 1]
+      let current = list[midpoint]
       if (current === item) {
         found = true
         return
