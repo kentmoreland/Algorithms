@@ -1,21 +1,17 @@
-module.exports = {
-  binarySearch: (array, item) => {
-    let found = false
-    let findItem = (list) => {
-      let midpoint = Math.floor(list.length / 2)
-      let current = list[midpoint]
-      if (current === item) {
-        found = true
-        return
-      }// endif
-      if (current < item) {
-        findItem(list.slice(midpoint, list.length))
-      }// endif
-      if (current > item) {
-        findItem(list.slice(list[0], midpoint))
-      }// endif
-    }// end finditem
-    findItem(array)
-    return found
+
+const binarySearch = (array, target) => {
+  let low = 0, high = array.length - 1;
+  while(low <= high ){
+    mid = Math.floor((high + low) / 2);
+    if(array[mid] === target){ return mid; }
+    else if(target < array[mid]){ high = mid - 1; }
+    else if(target > array[mid]){ low = mid + 1; };
   }
-}
+    return 'Not Found';
+};
+
+module.exports.binarySearch = binarySearch;
+
+
+
+
