@@ -3,7 +3,8 @@ module.exports = (grunt) => {
     jshint: {
       files: ['*.js', 'test/*.js', 'src/*.js'],
       options: {
-        esnext: true,
+        esversion: 6,
+        expr: true
       }
     }
 
